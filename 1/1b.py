@@ -1,6 +1,3 @@
-def is_digit(input):
-    return input.isdigit()
-
 fstream = open("input.txt", 'r')
 runningTotal = 0
 line = fstream.readline()
