@@ -34,9 +34,6 @@ def calculate_antinodes(antennas, width, height):
                         y1 = antinode_y1
                     else:
                         inRange = False
-
-        print(freq)
-        print(antinodes)
     return antinodes
 
 def count_unique_antinodes(input_map):

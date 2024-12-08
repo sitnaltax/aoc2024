@@ -8,8 +8,6 @@ def parse_map(input_map):
                 if char not in antennas:
                     antennas[char] = []
                 antennas[char].append((x, y))
-    print(antennas)
-
     return antennas
 
 def calculate_antinodes(antennas, width, height):
@@ -27,8 +25,6 @@ def calculate_antinodes(antennas, width, height):
                     antinodes.add((antinode_x1, antinode_y1))
                 if 0 <= antinode_x2 < width and 0 <= antinode_y2 < height:
                     antinodes.add((antinode_x2, antinode_y2))
-        print(freq)
-        print(antinodes)
     return antinodes
 
 def count_unique_antinodes(input_map):
