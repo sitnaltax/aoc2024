@@ -37,7 +37,7 @@ def create_region(x, y, input_map, coordinates_to_region, all_regions):
             else:
                 new_region.perimeter += 1 #we are at the edge of the region
 
-# Walk the map. For every 
+# Walk the map. For every cell, if it's not in a region, flood fill a new region starting there 
 for y in range(len(input_map)):
     for x in range(len(input_map[y])):
         if (x, y) not in coordinates_to_region.keys():
